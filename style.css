@@ -1,0 +1,329 @@
+/* -- GLOBAL STYLE -- */ 
+
+#mainMenu{
+  display: none;
+}
+
+body{
+  margin: 0; padding: 0;
+  background-color: #F8F8F8;
+  font-family: cambria , 'times new roman' , serif;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 20px;
+  box-shadow: 0px 0px 10px;
+}
+
+.clear{
+  clear: both;
+}
+
+
+/* -- HEADER -- */
+
+.header{
+  height: 95px;
+  background: url('gambar/mywebsite_logo.png') no-repeat 10px 10px;
+}
+.header .ads{
+  width: 50%;
+  float: right;
+  margin-top: 15px;
+}
+
+/* -- NAV -- */
+
+.satu{
+  width: 100%;
+}
+
+.topmenu li{
+  width: 19.8%;
+}
+
+
+.nav{
+  height: 60px;
+  width: 90%;
+  margin: 10px auto 0 auto; 
+}
+.nav li a{
+  text-align: center;
+  background-color: #1CA771;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 18px;
+  padding: 1px 2%;
+  list-style: none;
+}
+
+.topmenu , .submenu{
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+.nav ul li{
+  float: left;
+  position: relative;
+  display: block;
+}
+
+ul.submenu{
+  position: absolute;
+  display: none;
+}
+
+.topmenu li:hover>a{
+  background-color: #40B76D;
+  color: black;
+}
+
+.topmenu li:hover ul{
+  display: block;
+  z-index: 1;
+}
+
+.submenu li{
+  width: 100%;
+  top: 5px;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+/* -- SIDEBAR -- */
+
+.sidebar{
+  width: 28%;
+  margin-top: 10px;
+  float: left;
+}
+
+.sidebar img{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sidebar li a{
+  /* text-align: center; */
+  background-color: #1CA771;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  padding: 0 5px;
+
+}
+
+.sidebar ul{
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+.sidebar li:hover>a{
+  background-color: #40B76D;
+  color: black;
+}
+
+
+
+/* -- MAIN KONTEN -- */
+
+.main{
+  width: 70%;
+  float: right;
+}
+
+.main p , .main hr{
+  margin: 5px 0;
+}
+
+.article{
+  margin: 10px;
+  overflow: hidden;
+}
+
+.article h1{
+  margin: 0;
+}
+
+.article img{
+  height: 150px;
+  float: left;
+  padding: 10px 10px 0 0;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.article img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* -- FOOTER -- */
+
+.footer{
+  margin-top: 20px;
+  border-top: 1px solid black;
+  overflow: hidden;
+}
+
+.copyright{
+  float: left;
+}
+
+.footermenu ul , .footermenu li{
+  margin: 0;
+  list-style: none;
+  float: right;
+  text-decoration: none;
+}
+
+.footermenu li a{
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 10px;
+  color: #40B76D;
+}
+
+.footermenu li:hover a{
+  text-decoration: underline;
+}
+
+
+/* -- MEDIA QUERY TABLET -- */
+
+@media only screen and (min-width:481px) and (max-width:900px){
+
+ /* .submenu li{
+  width: 100%;
+} */
+
+.nav li a{
+  font-size: 15px;
+
+}
+
+/* .satu{
+  width: 100%;
+  } */
+
+.footermenu li a{
+  display: inline;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.copyright{
+  font-size: 15px;
+}
+
+.container{
+  width: 80%;
+  min-width: 660px;
+}
+
+.header .ads{
+  width: 50%;
+}
+
+.sidebar{
+  width: 28%;
+}
+
+.sidebar li a{
+  font-size: 15px;
+}
+
+.sidebar img{
+  width: 100%;
+}
+
+.main{
+  width: 70%;
+}
+
+.main h1{
+  font-size: 25px;
+}
+
+.nav{
+  width: 100%;
+}
+}
+
+
+/* -- MEDIA QUERY SMARTPHONE -- */
+
+@media only screen and (max-width: 480px){
+
+  .container{
+    width: 320px;
+  }
+
+  .nav{
+    width: 100%;
+    height: 30px;
+  }
+
+  .main{
+    float: none;
+    width: 320px;
+  }
+
+  .sidebar{
+    float: none;
+    width: 320px;
+  }
+
+  .article img{
+    float: none;
+    width: 100%;
+    padding: 10px 10px 0 0;
+  }
+
+  .sidebar img{
+    width: 100%;
+  }
+
+  #mainMenu{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: 70px;
+  }
+
+  .topmenu{
+    display: none;
+  }
+
+  .header .ads{
+    width: 100%;
+    float: none;
+    margin-top: 100px;
+  }
+
+  .footer{
+    margin-top: 0;
+  }
+
+  .footermenu , .footermenu li , .copyright{
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+}
+
